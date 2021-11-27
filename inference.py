@@ -4,7 +4,7 @@ import pandas as pd
 
 model = pickle.load(open('cropmodel.pkl', 'rb'))
 scaler = pickle.load(open('scalar.pkl', 'rb'))
-class_names = ['apple','blackgram','chickpea','coconut','coffee','cotton','grapes','jute','kidneybeans','lentil','maize','mango','mothbeans','mungbean','muskmelon','orange','papaya','pigeonpeas','pomegranate','rice']
+class_names = ['apple','blackgram','chickpea','coconut','coffee','cotton','grapes','jute','kidneybeans','lentil','maize','mango','mothbeans','mungbean','muskmelon','orange','papaya','pigeonpeas','pomegranate','rice','watermelon']
 
 def predict(df):
     df = df[['N', 'P', 'K', 'temperature', 'humidity', 'ph', 'rainfall']]
